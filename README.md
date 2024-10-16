@@ -44,8 +44,7 @@ This Python application provides a real-time graphical user interface for visual
 
 3. Update the COM port in the code if necessary:
    ```python:channel_viz.py
-   startLine: 55
-   endLine: 55
+   self.uart = serial.Serial('COM5', 468000, timeout=1)
    ```
 
 4. Run the script:
